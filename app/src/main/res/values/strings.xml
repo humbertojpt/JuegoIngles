@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Aprende Ingles</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_section4">Section 4</string>
+    <string name="title_section5">Section 5</string>
+
+    <string-array name="data">
+        <item>A</item>
+        <item>B</item>
+    </string-array>
+
+    <string-array name="cursos">
+        <item>Transicion A</item>
+        <item>Transicion B</item>
+        <item>Transicion C</item>
+        <item>Primero A</item>
+        <item>Primero B</item>
+        <item>Primero C</item>
+    </string-array>
+    <string-array name="profes">
+        <item>James Rodriguez</item>
+        <item>Jose Perez</item>
+        <item>Carlos Pena</item>
+    </string-array>
+
+    <string name="action_settings">Settings</string>
+    <string name="cursos">Cambiar Curso</string>
+    <string name="inicio">Cambiar Usuario</string>
+</resources>

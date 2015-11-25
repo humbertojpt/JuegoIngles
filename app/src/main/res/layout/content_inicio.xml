@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_inicio" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".Inicio"
+    android:background="@drawable/fondo_opt">
+
+
+    <TabHost android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TabWidget android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@android:id/tabs" />
+
+            <FrameLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@android:id/tabcontent" >
+
+                <LinearLayout android:id="@+id/tab1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:hint="  Nombre Estudiante  "
+                        android:layout_gravity="center"
+                        android:id="@+id/EstudName"
+                        android:textColorHint="@color/colorPrimaryText"
+                        android:layout_marginTop="70dp"
+                        android:capitalize="words" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  Continuar  "
+                        android:onClick="IrEstudiantes"
+                        android:padding="20dp"
+                        android:textColor="@color/colorPrimaryLight"
+                        android:background="@drawable/button_border"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"/>
+                </LinearLayout>
+
+                <LinearLayout android:id="@+id/tab2"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/ProfName"
+                        android:hint="  Nombre Profesor  "
+                        android:textColorHint="@color/colorPrimaryText"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="50dp"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:hint="  Contraseña  "
+                        android:textColorHint="@color/colorPrimaryText"
+                        android:id="@+id/PassText"
+                        android:inputType="textPassword"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  Continuar  "
+                        android:onClick="ContProfe"
+                        android:padding="15dp"
+                        android:textColor="@color/colorPrimaryLight"
+                        android:background="@drawable/button_border"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:text="Crear Profesor"
+                        android:onClick="CrearProfe"
+                        android:layout_marginRight="10dp"
+                        android:layout_gravity="right"
+                        android:background="@android:color/transparent" />
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</android.support.v4.widget.NestedScrollView>
